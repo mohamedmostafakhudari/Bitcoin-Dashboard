@@ -1,0 +1,21 @@
+// Breakpoints
+$breakpoints-up: (
+    'medium': (min-width: 768px),
+    'large': (min-width: 992px),
+    'huge': (min-width: 1200px),
+);
+$breakpoints-dw: (
+    'medium': (max-width: 776px),
+    'large': (max-width: 991px),
+    'huge': (max-width: 1999px),
+);
+// colors
+$colors: (
+    primary: #0D40C6,
+    secondary: #F2F6FE,
+    negative: #FC91A5,
+    text: #B2BDD3,
+);
+// spacing
+$main-padding: 40px;
+$main-transition: 250ms ease-in-out;

@@ -1,0 +1,7 @@
+<i class="fa-solid fa-bitcoin-sign"></i>
+<i class="fa-solid fa-igloo"></i>
+<i class="fa-solid fa-arrow-right-arrow-left"></i>
+<i class="fa-solid fa-chevron-down"></i>
+<i class="fa-solid fa-circle-user"></i>
+<i class="fa-regular fa-user"></i>
+<i class="fa-solid fa-screwdriver-wrench"></i>
