@@ -12,10 +12,11 @@ $breakpoints-dw: (
 // colors
 $colors: (
     primary: #0D40C6,
-    secondary: #F2F6FE,
+    secondary: #EEF2FE,
     negative: #FC91A5,
-    text: #B2BDD3,
+    textColor: #869AB8,
 );
 // spacing
 $main-padding: 40px;
 $main-transition: 250ms ease-in-out;
+$font-family: 'Cairo', sans-serif;

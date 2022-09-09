@@ -1,0 +1,34 @@
+@use '../abstracts/index' as *;
+.main {
+    flex: 1;
+}
+.header {
+    border-bottom: 2px solid getColor(secondary);
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        flex-basis: 100%;
+        @include breakpoint-up(large) {
+            flex-basis: 20%;
+        }
+        justify-content: center;
+    }
+    .logo img {
+        max-width: 70px;
+    }
+    .logo span {
+       margin: rem(-10);
+       font-weight: bold;
+       color: getColor(primary);
+       font-size: rem(18);
+    }
+    .nav {
+        flex: 1;
+        align-self: center;
+    }
+}

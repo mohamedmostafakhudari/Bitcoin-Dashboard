@@ -1,1 +1,4 @@
-$font-family: 'Cairo', sans-serif;
+@use '../abstracts/index' as *;
+html {
+    font-family: $font-family;
+}    

@@ -1,0 +1,96 @@
+@use '../abstracts/index' as *;
+.nav {
+    > .row {
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+        @include breakpoint-up(medium) {
+            justify-content: space-between;
+        }
+        @include breakpoint-up(large) {
+            justify-content: end;
+        }
+    }
+    > .row .col {
+        flex-basis:100%;
+        margin-right: 0;
+        max-width: 400px;
+        align-items: center;
+    }
+    > .row .col:first-child {
+        max-width: 200px;
+    }
+    > .row .col:nth-child(2) {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-basis: 100%;
+        justify-content: center;
+        @include breakpoint-up(large) {
+            max-width: 200px;
+            margin-left: rem(10);
+        }
+    }
+    &__list {
+
+    }
+    &__item {
+        
+    }
+    &__item.row {
+        display: flex;
+        justify-content: space-between;
+        padding: rem(5);
+        flex-wrap: nowrap;
+    }
+    &__item.row.balance .col.dollar {
+        flex-basis: 50%;
+    }
+    .user.row .col {
+        flex: 10%;
+        flex-grow: 0;
+    }
+    .user.row .col:nth-child(2) {
+        flex-basis: 50%;
+        flex-grow: 0;
+        padding-inline: rem(5);
+        @include breakpoint-up(large) {
+            flex: 1;
+        }
+    }
+    .balance {
+        margin-right: rem(30);
+        border: 1px solid getColor(secondary);
+        border-radius: 20px;
+        overflow: hidden;
+        background-image: linear-gradient(90deg, getColor(secondary), getColor(secondary) 50%, #fff 50%);
+        color: getColor(primary);
+    }
+    .bitcoin {
+    }
+    .bitcoin i, .dollar span {
+        padding-left: rem(5);
+    }
+    .dollar {
+        color: getColor(textColor);
+    }
+    .user {
+    }
+    .user i {
+        &:first-child {
+            font-size: rem(40);
+            color: #fff;
+            background-color: getColor(primary);
+            @include breakpoint-up(large) {
+                font-size: rem(30);
+            }
+        }
+    }
+    .user span {
+        color: getColor(textColor);
+        font-size: rem(15);
+    }
+    .user i:nth-child(3) {
+        color: getColor(textColor);
+    }
+}

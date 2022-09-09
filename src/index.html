@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bitcoin Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <aside class="sidebar">
@@ -15,27 +20,26 @@
     </aside>
     <main class="main">
         <header class="header">
-            <div class="container">
-                <div class="logo">
-                    <img src="./assets/logo.jpg" alt="logo">Tradix
+            <div class="container row">
+                <div class="logo col">
+                    <img src="./assets/logo.jpg" alt="logo"/> <span>Tradix</span>
                 </div>
-                <nav class="nav">
-                    <ul class="nav__list" role='list'>
-                        <li class="nav__item balance">
-                            <div class="bitcoin">0.0025<i class="fa-solid fa-bitcoin-sign"></i></div>
-                            <div class="dollar">219.63 USD</div>
+                <nav class="nav col">
+                    <ul class="nav__list row" role='list'>
+                        <li class="nav__item row col balance">
+                            <div class="bitcoin col">0.0025<i class="fa-solid fa-bitcoin-sign"></i></div>
+                            <div class="dollar col">219.63 <span>USD</span></div>
                         </li>
-                        <li class="nav__item user">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <span class="name">Mohamed Mostafa</span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                        <li class="nav__item col user row">
+                            <i class="fa-solid fa-circle-user col"></i>
+                            <span class="name col">Mohamed Mostafa</span>
+                            <i class="fa-solid fa-chevron-down col"></i>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
     </main>
-    <h1>Hello</h1>
     <script src="https://kit.fontawesome.com/46fe3b3b45.js" crossorigin="anonymous"></script>
 </body>
 </html>

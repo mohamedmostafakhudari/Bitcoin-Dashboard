@@ -1,0 +1,12 @@
+@use '../abstracts/index' as *;
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-inline: 15px;
+    @include breakpoint-up(large) {
+        max-width: 970px;
+    }
+    @include breakpoint-up(huge) {
+        max-width: 1170px;
+    }
+}
