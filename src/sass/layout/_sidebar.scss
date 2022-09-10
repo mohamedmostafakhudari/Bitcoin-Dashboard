@@ -1,6 +1,7 @@
 @use '../abstracts/index' as *;
 body {
     display: flex;
+    min-height: unset;
 }
 .sidebar {
     background: getColor(primary);

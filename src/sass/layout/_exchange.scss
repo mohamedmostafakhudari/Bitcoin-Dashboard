@@ -7,6 +7,22 @@
         color: getColor(primary);
     }
 }
+.main__content > .row {
+    @include breakpoint-up(large) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.main__content > .row .col:first-child {
+    @include breakpoint-up(large) {
+        flex-basis: 40%;
+    }
+}
+.main__content > .row .col:nth-child(2) {
+    @include breakpoint-up(large) {
+        flex-basis: 55%;
+    }
+}
 section.exchange {
     button {
         cursor: pointer;
@@ -20,6 +36,9 @@ section.exchange {
     .buttons.row > .col {
         flex-basis: 100%;
         max-width: rem(210);
+        @include breakpoint-up (large) {
+            flex-basis: 45%;
+        }
     }
     .buttons button {
         border-radius: 5px;

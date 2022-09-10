@@ -1,0 +1,71 @@
+@use '../abstracts/index' as *;
+.further-info {
+    padding-top: rem(40);
+    @include breakpoint-up(medium) {
+        padding: 0;
+    }
+    .users.row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: rem(20);
+    }
+    .users.row > .col {
+        flex: 1;
+        min-width: 152px;
+    }
+    .users.row > .row {
+        display: flex;
+    }
+    .users.row > .row:nth-child(2) {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    .users img {
+        max-width: 40px;
+        max-height: 40px;
+        border-radius: 50%;
+        margin-right: rem(8);
+    }
+    .users .user:nth-child(2) img {
+        margin-right: 0;
+        margin-left: rem(8);
+    }
+    .user-info {
+        font-size: rem(13);
+    }
+    .user-info h3 {
+        font-weight: normal;
+        font-size: rem(15);
+    }
+    .users a {
+        text-decoration: none;
+    }
+    .further-info-content .row {
+        display: flex;
+        margin-bottom: rem(8);
+    }
+    .further-info-content .col:first-child {
+        flex-basis: 40%;
+    }
+    .further-info-content .col:nth-child(2) {
+        flex: 1;
+    }
+    .further-info-content {
+        background-color: #fff;
+    }
+    .further-info-content div {
+        background-color: getColor(secondary);
+        padding-inline: rem(10);
+    }
+    .further-info-content p {
+        color: getColor(textColor);
+        padding: rem(10) 0;
+    }
+    .further-info-content .selling p {
+        color: getColor(primary);
+    }
+    .further-info-content .vat p:nth-child(2) {
+        color: getColor(negative);
+    }
+}
