@@ -39,6 +39,54 @@
                 </nav>
             </div>
         </header>
+        <div class="container">
+             <p class="welcome"><span>Welcome Back,</span> Username</p>
+        </div>
+        <div class="main__content">
+            <div class="container">
+                <section class="exchange">
+                    <div class="buttons row">
+                        <button type="button" class="buy col">Buy</button>
+                        <button type="button" class="sell col">Sell</button>
+                    </div>
+                    <form action="/" method="post">
+                        <label for="currency">Currency</label>
+                        <div class="info row">
+                            <select name="currency" id="currency" class="currency col">
+                                <option value="bitcoin" selected>Bitcoin</option>
+                                <option value="usd">USD</option>
+                                <option value="euro">Euro</option>
+                            </select>
+                            <span class="equal col">125.00<span>USD</span></span>
+                        </div>
+                        <label for="payment-method">Payment Method</label>
+                        <div class="info row">
+                            <select name="payment-method" id="payment-method" class="payment-method col">
+                                <option value="paypal" selected>Paypal</option>
+                                <option value="mastercard">Mastercard</option>
+                                <option value="payoneer">Payoneer</option>
+                            </select>
+                            <span class="equal col">125.00 <span>USD</span></span>
+                        </div>
+                        <label for="amount">Enter your amount</label>
+                        <div class="info row">
+                            <input type="number" id="amount" class="amount col" name="amount" placeholder="0.0234 BTC">
+                            <span class="equal col">125.00 <span>USD</span></span>
+                        </div>
+                        <div class="limit row">
+                            <p class="col">Monthly Limit</p>
+                            <p class="col">$49750 remaining</p>
+                        </div>
+                        <button type="button" class="exchange-btn">
+                            Exchange Now
+                        </button>
+                    </form>
+                    <p class="note">
+                        Note: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam recusandae rem aliquam voluptate, tempora dolorum.
+                    </p>
+                </section>
+            </div>
+        </div>
     </main>
     <script src="https://kit.fontawesome.com/46fe3b3b45.js" crossorigin="anonymous"></script>
 </body>
