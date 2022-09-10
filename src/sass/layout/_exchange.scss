@@ -108,6 +108,9 @@ section.exchange {
     .limit p:first-child {
         color: getColor(textColor);
     }
+    .limit p:last-child {
+        text-align: right;
+    }
     .exchange-btn {
         background-color: #12d877;
         color: #fff;
