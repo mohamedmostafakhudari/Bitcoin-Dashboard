@@ -10,4 +10,4 @@
 
 ## Mobile
 
-![image](https://user-images.githubusercontent.com/47444914/189489758-e032dd0a-9529-45bd-88aa-b5868db5a780.png)
+![image](https://user-images.githubusercontent.com/47444914/189489818-f39ccef6-f9f4-4ccc-9ac4-6bf23b467284.png)
